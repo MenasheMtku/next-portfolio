@@ -10,7 +10,7 @@ export default function Home() {
           {/* Text Section */}
           <div className="order-1 grid gap-4 pl-4 text-center md:order-[-1] md:text-left">
             <h2 className="text-[1.75rem] font-semibold sm:text-[2rem] lg:text-[2.25rem]">
-              Hi there, I'm Menashe 👋🏽
+              Hi there, I am Menashe 👋🏽
             </h2>
             <h1 className="text-[2rem] font-bold leading-tight sm:text-[2.5rem] lg:text-[3.5rem]">
               Frontend Web Developer
