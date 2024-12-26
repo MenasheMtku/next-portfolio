@@ -21,11 +21,11 @@ const MobileSidebar = () => {
     <>
       <Sheet>
         <SheetTrigger>
-          <div className="md:hidden p-2 border rounded cursor-pointer bg-slate-200">
+          <div className="cursor-pointer rounded border bg-slate-200 p-2 md:hidden">
             <Menu />
           </div>
         </SheetTrigger>
-        <SheetContent side="left" className="p-0 w-72 text-zinc-400 text-xl">
+        <SheetContent side="left" className="w-72 p-0 text-xl text-zinc-400">
           <Sidebar />
         </SheetContent>
       </Sheet>
