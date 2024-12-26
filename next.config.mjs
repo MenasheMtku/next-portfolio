@@ -11,7 +11,7 @@ const nextConfig = {
     ];
   },
   // Add the following configuration for Netlify
-  target: "serverless",
+  // target: "serverless",
 };
 
 export default nextConfig;
