@@ -2,7 +2,7 @@ const titleStyle = "";
 
 const Title = ({ children }: { children: React.ReactNode }) => {
   return (
-    <h2 className="text-[2.5rem] md:text-[3rem] font-semibold text-center w-full pb-[0.3rem]">
+    <h2 className="text-[2.5rem] md:text-[3rem] font-semibold text-center w-full pb-[0.3rem] mt-16">
       {children}
     </h2>
   );

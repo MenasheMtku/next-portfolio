@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
 const formInput =
-  "px-4 py-6 bg-foreground/90 text-background border border-input rounded-md";
+  "px-4 py-6 border border-input rounded-md";
 const ContactPage = () => {
   return (
     <section className="w-full">

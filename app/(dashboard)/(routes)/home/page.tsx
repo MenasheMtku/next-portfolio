@@ -4,13 +4,13 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="h-full">
-      <header className="flex w-full h-full items-center justify-center px-4 pt-[4.5rem] md:items-center md:pt-0 ">
-        <div className="grid w-full grid-flow-row grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-8">
+    <section className="min-h-screen flex items-center justify-center">
+      <header className="flex w-full h-full items-center justify-center px-4 pt-[4.5rem] md:items-center md:pt-0">
+        <div className="grid w-full grid-flow-row grid-cols-1 items-center gap-14 md:grid-cols-2 md:gap-4">
           {/* Text Section */}
           <div className="order-1 grid gap-4 pl-4 text-center md:order-[-1] md:text-left">
             <h2 className="text-[1.75rem] font-semibold sm:text-[2rem] lg:text-[2.25rem]">
-              Hi, I am Menashe👋🏽
+              Hi there, I'm Menashe 👋🏽
             </h2>
             <h1 className="text-[2rem] font-bold leading-tight sm:text-[2.5rem] lg:text-[3.5rem]">
               Frontend Web Developer
@@ -28,7 +28,7 @@ export default function Home() {
           </div>
 
           {/* Image Section */}
-          <div className="flex justify-center">
+          <div className="flex justify-center bg">
             <picture>
               <Image
                 className="h-[180px] w-[180px] rounded-full object-cover shadow-lg md:h-[15rem] md:w-[15rem]"

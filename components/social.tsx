@@ -16,11 +16,11 @@ const links = [
     path: "https://github.com/MenasheMtku",
     icon: FaGithub,
     color: "bg-black",
-    hoverColor: "hover:text-gray-400",
+    hoverColor: "hover:text-gray-400 ",
   },
   {
     name: "WhatsApp",
-    path: "https://wa.me/0542661126",
+    path: "https://wa.me/972542661126?text=Hi%20Menashe,%0A%0AI%20came%20across%20your%20profile%20and%20I%E2%80%99m%20looking%20for%20a%20frontend%20developer%20for%20an%20exciting%20opportunity.%0A%0ALet's%20connect!",
     icon: FaWhatsapp,
     color: "bg-green-500",
     hoverColor: "hover:text-green-700",
