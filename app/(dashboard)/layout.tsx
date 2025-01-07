@@ -1,19 +1,46 @@
+"use client";
+import { ReactNode } from "react";
+import ThemeProvider from "@/components/ThemeProvider";
+// import { useTheme } from "@/components/ThemeProvider";
+// import { themes } from "@/lib/themes";
 import Navbar from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
+import ThemeToggle from "@/components/ThemeToggle";
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+const DashboardLayout = ({ children }: RootLayoutProps) => {
   return (
+    <ThemeProvider>
+      <LayoutContent>{children}</LayoutContent>
+    </ThemeProvider>
+  );
+};
 
-    <div className="h-full relative">
+// Separate component to use the theme hook (hooks must be used within component scope)
+const LayoutContent = ({ children }: { children: ReactNode }) => {
+  // const { theme } = useTheme();
+
+  return (
+    <div className="relative h-full">
       {/* Sidebar */}
-      <div className="hidden h-screen md:flex md:flex-col md:fixed md:inset-y-0 md:w-72 z-[80] bg-gray-900 p-4">
+      <div
+        className={`z-[80] hidden h-screen p-0 md:fixed md:inset-y-0 md:flex md:w-72 md:flex-col`}
+      >
         <Sidebar />
       </div>
-
       {/* Main Content */}
-      <main className="md:pl-72 w-full min-h-screen bg-slate-100">
+      <main className={`min-h-screen w-full md:pl-72`}>
         <Navbar />
-        <div className="w-full flex justify-center min-h-screen">
+        <div className="flex min-h-screen w-full justify-center">
+          <div className="absolute right-6 top-4">
+            <ThemeToggle />
+            <div className="space-y-4">
+              {/* <div className="flex justify-end gap-4 bg-slate-500 p-4"></div> */}
+            </div>
+          </div>
           {children}
         </div>
       </main>

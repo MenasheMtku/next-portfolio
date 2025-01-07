@@ -30,15 +30,15 @@ const links = [
 const Social = () => {
   return (
     <div className="flex items-center justify-around gap-4 p-0">
-      {links.map(item => (
+      {links.map((item) => (
         <Link
           key={item.name}
           href={item.path}
           target="_blank"
-          className="transition-colors duration-300 rounded-full p-4"
+          className="rounded-full p-4 transition-colors duration-300"
           aria-label={item.name}
         >
-          <item.icon size={25} className={`text-white ${item.hoverColor}`} />
+          <item.icon size={25} className={`text-primary ${item.hoverColor}`} />
         </Link>
       ))}
     </div>
