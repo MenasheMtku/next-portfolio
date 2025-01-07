@@ -44,28 +44,31 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="space-y-4 p-4 flex flex-col h-full bg-[#111827] text-white">
-      <div className="px-3 py-2 flex-1">
-        <div className="flex flex-col justify-between h-full pt-6">
-          <div className="space-y-4">
-            {routes.map(route => (
-              <div
-                key={route.name}
-                className={cn(
-                  "text-lg group gap-4 items-center p-3 inline-flex w-full justify-start font-medium cursor-pointer hover:bg-white/10",
-                  pathname === route.path
-                    ? "bg-white/10"
-                    : "bg-transparent : text-zinc-400"
-                )}
-              >
-                <route.icon size={25} className="text-white hidden md:block" />
-                <Link key={route.name} href={route.path} className="w-full">
-                  {route.name}
-                </Link>
-              </div>
-            ))}
+    <div className={`h-full`}>
+      <div className="flex h-full flex-col space-y-4 bg-secondary p-2 text-primary-foreground">
+        <div className="flex-1 px-3 py-2">
+          <div className="flex h-full flex-col justify-between pt-6">
+            <div className="space-y-4">
+              {routes.map((route) => (
+                <div
+                  key={route.name}
+                  className={cn(
+                    "group inline-flex w-full cursor-pointer items-center justify-start gap-4 p-3 text-lg font-medium hover:bg-primary/10 lg:text-xl",
+                    pathname === route.path
+                      ? "bg-primary/10 text-primary"
+                      : ": bg-transparent text-zinc-400",
+                  )}
+                >
+                  <route.icon size={25} className="hidden md:block" />
+                  <Link key={route.name} href={route.path} className="w-full">
+                    {route.name}
+                  </Link>
+                </div>
+              ))}
+            </div>
+
+            <Social />
           </div>
-          <Social />
         </div>
       </div>
     </div>
