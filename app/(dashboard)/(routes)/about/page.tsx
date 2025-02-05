@@ -1,4 +1,4 @@
-import Title from "@/components/title";
+import Title from "@/components/Title";
 
 const aboutLI = [
   "Practical engineer graduate (ORT Colleges, 2020) specializing in front-end development. Proficient in HTML, CSS, JavaScript, with extensive experience in React and TailwindCSS for building modern, scalable web applications.",

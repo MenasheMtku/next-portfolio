@@ -1,4 +1,4 @@
-import Title from "@/components/title";
+import Title from "@/components/Title";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
@@ -19,9 +19,9 @@ const projects: Project[] = [
     id: 1,
     title: "Movie App",
     description: "Explore new movies and tv shows, cast members and watch the trailer",
-    codeUrl: "https://github.com/MenasheMtku/movie-app-react",
-    image: "/images/movieAppImg.png",
-    siteUrl: "https://trailersphere.netlify.app/",
+    codeUrl: "https://github.com/MenasheMtku/next-movie-app",
+    image: "/images/next-img-site.png",
+    siteUrl: "https://next-tmdb.netlify.app/",
   },
   {
     id: 2,

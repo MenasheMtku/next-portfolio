@@ -1,21 +1,21 @@
-import Navbar from "@/components/navbar";
-import Sidebar from "@/components/sidebar";
+import Footer from "@/components/layout/Footer";
+import MobileSidebar from "@/components/layout/MobileSidebar";
+import Navbar from "@/components/layout/Navbar";
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-
-    <div className="h-full relative">
+    <div className="relative h-full">
       {/* Sidebar */}
-      <div className="hidden h-screen md:flex md:flex-col md:fixed md:inset-y-0 md:w-72 z-[80] bg-gray-900 p-4">
-        <Sidebar />
+      <div className="fixed left-2 top-2 z-10 block border-0 md:hidden">
+        <MobileSidebar />
       </div>
-
       {/* Main Content */}
-      <main className="md:pl-72 w-full min-h-screen bg-slate-100">
+      <main className="min-h-screen w-full bg-slate-100">
         <Navbar />
-        <div className="w-full flex justify-center min-h-screen">
+        <div className="flex min-h-screen max-w-[1440px] pt-4 mx-auto justify-center">
           {children}
         </div>
+        <Footer/>
       </main>
     </div>
   );

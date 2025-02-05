@@ -1,4 +1,4 @@
-import Title from "@/components/title";
+import Title from "@/components/Title";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 
@@ -27,6 +27,7 @@ const StackPage = () => {
                 alt={item.title}
                 width={50}
                 height={50}
+                priority
               />
               <p className="text-center text-sm">{item.title}</p>
             </Card>

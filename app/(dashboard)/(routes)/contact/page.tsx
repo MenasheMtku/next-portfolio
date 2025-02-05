@@ -1,6 +1,6 @@
 "use client";
 
-import Title from "@/components/title";
+import Title from "@/components/Title";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
