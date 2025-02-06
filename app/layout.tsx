@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Menashe Mtku",
-  description: "Menashe Mtku's portfolio",
+  title: "Menashe Mtku | Frontend Developer & Software Engineer",
+  description: "I'm Menashe Mtku, a Frontend Developer specializing in React, Next.js, and modern web technologies. Explore my portfolio to see my projects, skills, and experience in building high-performance applications.",
 };
 
 export default function RootLayout({
