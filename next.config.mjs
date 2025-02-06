@@ -3,18 +3,14 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  //  redirects() {
-  // return [
-  // {
-  // source: "/",
-  //destination: "/home",
-  //permanent: true,
-  //},
-  //];
-  //},
-  output: 'standalone',
-  experimental: {
-    appDir: true, // Ensure App Router is enabled
+  redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/home",
+        permanent: true,
+      },
+    ];
   },
 };
 export default nextConfig;
