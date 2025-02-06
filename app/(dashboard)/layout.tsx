@@ -1,9 +1,9 @@
-import Footer from "@/components/layout/Footer";
-import MobileSidebar from "@/components/layout/MobileSidebar";
-import Navbar from "@/components/layout/Navbar";
+//import Footer from "@/components/layout/Footer";
+//import MobileSidebar from "@/components/layout/MobileSidebar";
+//import Navbar from "@/components/layout/Navbar";
 
-const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
-  return (
+//const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
+ // return (
     {/* <div className="relative h-full">
       
       <div className="fixed left-2 top-2 z-10 block border-0 md:hidden">
@@ -18,7 +18,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
         <Footer/>
       </main>
     </div> */}
-  );
-};
+  //);
+//};
 
-export default DashboardLayout;
+//export default DashboardLayout;
