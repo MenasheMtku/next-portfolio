@@ -12,5 +12,9 @@ const nextConfig = {
   //},
   //];
   //},
+  output: 'standalone',
+  experimental: {
+    appDir: true, // Ensure App Router is enabled
+  },
 };
 export default nextConfig;
