@@ -10,14 +10,13 @@ export default function Home() {
           {/* Text Section */}
           <div className="order-1 grid gap-4 pl-4 text-center md:order-[-1] md:text-left">
             <h2 className="text-[1.75rem] font-semibold sm:text-[2rem] lg:text-[2.25rem]">
-              Hi there, I am Menashe 👋🏽
+              Hi, I&apos;m Menashe 👋🏽
             </h2>
             <h1 className="text-[2rem] font-bold leading-tight sm:text-[2.5rem] lg:text-[3.5rem]">
               Frontend Web Developer
             </h1>
-            <p className="text-[1.1rem] sm:text-[1.3rem] lg:text-[1.4rem]">
-              I specialize in web development for organizations and businesses.
-            </p>
+            <p className="text-lg md:text-xl">
+              Passionate about crafting sleek and responsive web experiences. I specialize in building modern, user-friendly interfaces with React, Next.js, and Tailwind CSS.</p>
             <>
               <Link href="/projects" type="button">
                 <Button className="mx-auto flex w-max items-center justify-center rounded-md bg-primary px-[1rem] py-[0.7rem] font-semibold tracking-widest text-accent duration-500 ease-in md:mx-0">
