@@ -35,7 +35,9 @@ export default function Home() {
                 width={180}
                 height={180}
                 alt="profile_image"
-                priority
+                placeholder="blur"
+                blurDataURL="/arbel-blur.png"
+                loading="lazy"
               />
             </picture>
           </div>
